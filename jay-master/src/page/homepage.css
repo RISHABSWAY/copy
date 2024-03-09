@@ -1,0 +1,48 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Change justify-content property */
+  align-items: center;
+}
+
+.cont-hp {
+  width: 24rem; /* Adjust width as needed */
+  height: 28rem;
+  margin: 2rem 7rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  overflow: hidden; /* Ensure the overflow doesn't affect the layout */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+.cont-hp:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.cont-hp img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%; /* Ensure image doesn't exceed container height */
+  width: 20rem; /* Allow the image to scale proportionally */
+  height: 25rem; /* Allow the image to scale proportionally */
+  object-fit: fill;
+}
+
+.cont-hp p {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.cont-hp a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.cont-hp a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cont-hp {
+    width: 25%; /* Make cont-hps full width on smaller screens */
+  }
+}
